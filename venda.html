@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diogo Souza Santos">
+    <meta name="description" content="Projeto desenvolvido para desenvolvimento de habilidades Front-End">
+    <meta name="keywords" content="desenvolvimento, css, html, programação, site, sistema">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto 05</title>
+</head>
+
+<body>
+    <header style="border-bottom: 5px solid #EB2D2D;">
+        <div class="container">
+            <div class="logo"></div>
+            <div class="menu">
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="index.html" style="color: black;">Home</a></li>
+                        <li><a href="" style="color: #EB2D2D;">Venda</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+                <!--desktop-->
+
+                <nav class="mobile">
+                    <div class="icone" onclick="mostrar_menu()"></div>
+                    <ul id="ul_mobile">
+                        <li><a href="index.html" style="color: black;">Home</a></li>
+                        <li><a href="" style="color: #EB2D2D;">Venda</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+                <!--mobile-->
+            </div>
+            <!--menu-->
+        </div>
+        <!--container-->
+    </header>
+    <!--header-->
+
+    <section class="info">
+        <div class="container">
+            <div class="linha" style="width: 100%;"></div>
+            <div class="anuncio">Venda</div>
+        </div>
+        <!--container-->
+    </section>
+    <!--info-->
+
+
+    <section class="venda-carro">
+        <div class="container">
+            <div class="pesquisa">
+
+                <div class="preco">
+                    <h2>Filte por preço</h2>
+                    <div class="barra">
+                        <div class="marcador"></div>
+                        <div class="seletor"></div>
+                    </div>
+
+                    <div class="faixa-preco">
+                        <p>R$ 1000,00</p>
+                        <p>R$ 70.000</p>
+                    </div>
+                </div>
+
+                <div class="anos">
+                    <h2>Filtre por ano</h2>
+                    <div class="periodo">
+                        <div class="escolha"></div>
+                        <p>1960 - 1970</p>
+                    </div>
+                    <div class="periodo">
+                        <div class="escolha"></div>
+                        <p>1971 - 1980</p>
+                    </div>
+                    <div class="periodo">
+                        <div class="escolha"></div>
+                        <p>1981 - 1990</p>
+                    </div>
+                    <div class="periodo">
+                        <div class="escolha"></div>
+                        <p>1991 - 2000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="opcoes-carros destaque">
+                <div class="container">
+
+                    <div class="carro">
+                        <img src="imagens/fusca.jpg" alt="">
+                        <div class="carro-info">
+                            <div>
+                                <h3>Fusca</h3>
+                                <p>1.6, gasolina, manual, ano 1982</p>
+                            </div>
+                            <a href="fusca.html"><button class="botao01">Mais Detalhes</button></a>
+                        </div>
+                    </div>
+
+                    <div class="carro">
+                        <img src="imagens/jaguar.jpg" alt="">
+                        <div class="carro-info">
+                            <div>
+                                <h3>Jaguar</h3>
+                                <p>2.2, gasolina, manual, ano 1989</p>
+                            </div>
+                            <button class="botao01">Mais Detalhes</button>
+                        </div>
+                    </div>
+
+                    <div class="carro">
+                        <img src="imagens/chev.jpg" alt="">
+                        <div class="carro-info">
+                            <div>
+                                <h3>Chevrolet</h3>
+                                <p>2.0, gasolina, manual, ano 1976</p>
+                            </div>
+                            <button class="botao01">Mais Detalhes</button>
+                        </div>
+                    </div>
+
+                    <div class="carro">
+                        <img src="imagens/brasilia.jpg" alt="">
+                        <div class="carro-info">
+                            <div>
+                                <h3>Brasilia</h3>
+                                <p>1.4, gasolina, manual, ano 1985</p>
+                            </div>
+                            <button class="botao01">Mais Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <!--container-->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Esse website é um projeto prático</p>
+            <p>Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

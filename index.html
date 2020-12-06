@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diogo Souza Santos">
+    <meta name="description" content="Projeto desenvolvido para desenvolvimento de habilidades Front-End">
+    <meta name="keywords" content="desenvolvimento, css, html, programação, site, sistema">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto 05</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"></div>
+            <div class="menu">
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="venda.html">Venda</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+                <!--desktop-->
+
+                <nav class="mobile">
+                    <div class="icone" onclick="mostrar_menu()"></div>
+                    <ul id="ul_mobile">
+                        <li><a href="">Home</a></li>
+                        <li><a href="venda.html">Venda</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+                <!--mobile-->
+            </div>
+            <!--menu-->
+        </div>
+        <!--container-->
+    </header>
+    <!--header-->
+
+    <section class="bg">
+        <div class="container">
+            <div class="card"><span>Consultoria</span></div>
+            <div class="card"><span>Compra</span></div>
+            <div class="card"><span>Venda</span></div>
+            <div class="card"><span>E-mail@hotmail.com</span></div>
+        </div>
+        <!--container-->
+    </section>
+    <!--bg-->
+
+    <section class="info">
+        <div class="container">
+            <div class="linha"></div>
+            <div class="anuncio">Veiculos em destaque</div>
+        </div>
+        <!--container-->
+    </section>
+    <!--info-->
+
+    <section class="destaque">
+        <div class="container">
+
+            <div class="carro">
+                <img src="imagens/fusca.jpg" alt="">
+                <div class="carro-info">
+                    <div>
+                        <h3>Fusca</h3>
+                        <p>1.6, gasolina, manual, ano 1982</p>
+                    </div>
+                    <button class="botao01">Mais Detalhes</button>
+                </div>
+            </div>
+
+            <div class="carro">
+                <img src="imagens/jaguar.jpg" alt="">
+                <div class="carro-info">
+                    <div>
+                        <h3>Jaguar</h3>
+                        <p>2.2, gasolina, manual, ano 1989</p>
+                    </div>
+                    <button class="botao01">Mais Detalhes</button>
+                </div>
+            </div>
+
+            <div class="carro">
+                <img src="imagens/chev.jpg" alt="">
+                <div class="carro-info">
+                    <div>
+                        <h3>Chevrolet</h3>
+                        <p>2.0, gasolina, manual, ano 1976</p>
+                    </div>
+                    <button class="botao01">Mais Detalhes</button>
+                </div>
+
+            </div>
+        </div>
+        <!--container-->
+    </section>
+    <!--destaque-->
+
+    <section class="depoimentos-servicos">
+
+        <div class="servicos">
+            <div>
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Compra</li>
+                    <li>Venda</li>
+                    <li>Consultoria</li>
+                    <li>Indicação de mecânicos e peças</li>
+                </ul>
+            </div>
+
+            <div class="servicos-btn">
+                <button class="botao01">Saiba mais</button>
+            </div>
+            <!--servicos-btn-->
+        </div>
+        <!--servicos-->
+
+        <div class="depoimentos">
+            <h2>Depoimentos</h2>
+            <p>“O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive”</p>
+            <div class="controle-depoimento">
+                <div>
+                    <img src="imagens/arrow-left.png" alt="">
+                    <img src="imagens/arrow-right.png" alt="">
+                </div>
+                <span>João da Silva</span>
+            </div>
+        </div>
+        <!--depoimentos-->
+
+    </section>
+    <!--depoimentos-servicos-->
+
+
+    <section class="info">
+        <div class="container">
+            <div class="linha"></div>
+            <div class="anuncio">Contato</div>
+        </div>
+        <!--container-->
+    </section>
+    <!--info-->
+
+    <section class="contato">
+        <div class="container">
+            <form action="">
+                <input class="w100" placeholder="Nome*" type="text" name="" id="inpNome">
+                <div class="metade">
+                    <input class="w50" placeholder="E-mail*" type="text" name="" id="inpEmail">
+                    <input class="w50" placeholder="Telefone*" type="text" name="" id="inpTel">
+                </div>
+                <textarea name="" id="Msg" cols="30" rows="10" placeholder="Mensagem*"></textarea>
+                <input type="button" value="Enviar" class="botao01" onclick="validar_form()">
+            </form>
+        </div>
+        <!--container-->
+    </section>
+    <!--contato-->
+
+    <footer>
+        <div class="container">
+            <p>Esse website é um projeto prático</p>
+            <p>Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

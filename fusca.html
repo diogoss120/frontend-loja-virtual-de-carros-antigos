@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diogo Souza Santos">
+    <meta name="description" content="Projeto desenvolvido para desenvolvimento de habilidades Front-End">
+    <meta name="keywords" content="desenvolvimento, css, html, programação, site, sistema">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto 05</title>
+</head>
+
+<body>
+    <header style="border-bottom: 5px solid #EB2D2D;">
+        <div class="container">
+            <div class="logo"></div>
+            <div class="menu">
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="index.html" style="color: black;">Home</a></li>
+                        <li><a href="venda.html" style="color: #EB2D2D;">Venda</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+                <!--desktop-->
+
+                <nav class="mobile">
+                    <div class="icone" onclick="mostrar_menu()"></div>
+                    <ul id="ul_mobile">
+                        <li><a href="index.html" style="color: black;">Home</a></li>
+                        <li><a href="venda.html" style="color: #EB2D2D;">Venda</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+                <!--mobile-->
+            </div>
+            <!--menu-->
+        </div>
+        <!--container-->
+    </header>
+    <!--header-->
+
+    <section class="veiculo-individual">
+        <div class="container">
+            <img src="imagens/fusca.jpg" alt="">
+            <div class="descricao">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, blanditiis adipisci rerum quaerat culpa vitae inventore praesentium facilis atque quia quam repudiandae laboriosam ipsa fugiat. </p>
+                <span>R$6.000</span>
+                <a href="#formulario"><button class="botao01">Entre em contato</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="galeria container">
+        <div class="efeito">
+            <div class="opcoes">
+                <img src="imagens/fusca.jpg" alt="">
+                <img src="imagens/fusca.jpg" alt="">
+                <img src="imagens/fusca.jpg" alt="">
+                <img src="imagens/fusca.jpg" alt="">
+                <img src="imagens/fusca.jpg" alt="">
+                <img src="imagens/fusca.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="info">
+        <div class="container">
+            <div class="linha"></div>
+            <div class="anuncio">Contato</div>
+        </div>
+        <!--container-->
+    </section>
+    <!--info-->
+
+    <section class="contato" id="formulario">
+        <div class="container">
+            <form action="">
+                <input class="w100" placeholder="Nome*" type="text" name="" id="">
+                <div class="metade">
+                    <input class="w50" placeholder="E-mail*" type="text" name="" id="">
+                    <input class="w50" placeholder="Telefone*" type="text" name="" id="">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem*"></textarea>
+                <button class="botao01">Enviar</button>
+            </form>
+        </div>
+        <!--container-->
+    </section>
+    <!--contato-->
+
+    <footer>
+        <div class="container">
+            <p>Esse website é um projeto prático</p>
+            <p>Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="js/functions.js"></script>
+</body>
+</html>
